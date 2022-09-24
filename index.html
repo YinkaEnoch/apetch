@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HV Fabrics</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="brand">
+          <h1>HvFabrics</h1>
+          <p id="open-nav">&#9776;</p>
+        </div>
+
+        <nav>
+          <ul>
+            <li id="close-nav">&times;</li>
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </main>
+
+    <script>
+      const nav = document.querySelector("nav");
+
+      const showNav = () => nav.classList.toggle("show-nav");
+
+      // Open Nav
+      document.querySelector("#open-nav").addEventListener("click", showNav);
+
+      // Close Nav
+      document.querySelector("#close-nav").addEventListener("click", showNav);
+    </script>
+  </body>
+</html>
